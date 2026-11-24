@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <style>
+    /* Smooth scrolling when clicking navigation links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Light and Clean Page Design */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f4f7f6;
+      color: #333333;
+    }
+
+    /* Top Navigation Menu */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 16px 0;
+      text-align: center;
+      border-bottom: 1px solid #dddddd;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #2c3e50;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 15px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #3498db;
+      color: #ffffff;
+    }
+
+    /* Section Styling */
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 20px 50px 20px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    /* Welcome Section */
+    .hero-box {
+      max-width: 650px;
+      background-color: #ffffff;
+      padding: 50px 30px;
+      border-radius: 20px;
+      text-align: center;
+      border: 1px solid #dddddd;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .icon-circle {
+      font-size: 55px;
+      background-color: #eaf2f8;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 20px auto;
+    }
+
+    .hero-box h1 {
+      font-size: 34px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #3498db;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    /* Container for About & Favorites */
+    .container {
+      max-width: 950px;
+      text-align: center;
+    }
+
+    .container h1 {
+      font-size: 34px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .intro-text {
+      font-size: 17px;
+      color: #555555;
+      max-width: 700px;
+      margin: 0 auto 35px auto;
+      line-height: 1.6;
+    }
+
+    /* Cards Layout */
+    .cards-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #ffffff;
+      width: 270px;
+      padding: 20px;
+      border-radius: 16px;
+      border: 1px solid #dddddd;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #3498db;
+    }
+
+    /* Image Styling inside Cards (Fixed cropping and blurriness) */
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain; /* Keeps the whole image visible without cutting edges */
+      background-color: #f8f9fa; /* Clean background for padding empty spaces */
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .card h2 {
+      color: #2c3e50;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666666;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 12px 26px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#welcome">Welcome</a>
+    <a href="#about">About Me</a>
+    <a href="#favorites">My Favorites & Dream Job</a>
+  </nav>
+
+  <!-- SECTION 1: WELCOME -->
+  <section id="welcome">
+    <div class="hero-box">
+      <div class="icon-circle">👋</div>
+      <h1>Welcome to My Website</h1>
+      <p class="subtitle">This is my corner of the internet.</p>
+      <p>I am a student at Kotebe Menelik University Science Shared Campus. Thanks for looking!</p>
+      <a href="#about" class="btn">Explore About Me ↓</a>
+    </div>
+  </section>
+
+  <!-- SECTION 2: ABOUT ME -->
+  <section id="about">
+    <div class="container">
+      <h1>About Me</h1>
+      <p class="intro-text">
+        Here are the things I love doing:
+      </p>
+
+      <div class="cards-row">
+        <!-- Hobby 1: Volleyball with Image -->
+        <div class="card">
+          <img src="images/miguel-teirlinck-VDkRsT649C0-unsplash (1).jpg" alt="Playing Volleyball">
+          <h2>Playing Volleyball</h2>
+          <p>I love playing volleyball and staying active on the court.</p>
+        </div>
+
+        <!-- Hobby 2: Anime -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="font-size: 35px; margin-bottom: 10px;">⚡</div>
+            <h2>Watching Anime</h2>
+            <p>Watching anime is one of my favorite ways to relax and enjoy great stories.</p>
+          </div>
+        </div>
+
+        <!-- Hobby 3: Movies -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="font-size: 35px; margin-bottom: 10px;">🎬</div>
+            <h2>Watching Movies</h2>
+            <p>I really enjoy watching a great movie whenever I have free time.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#favorites" class="btn">View Favorites & Future ↓</a>
+    </div>
+  </section>
+
+  <!-- SECTION 3: FAVORITES & DREAM JOB -->
+  <section id="favorites">
+    <div class="container">
+      <h1>My Favorites & Future Goal</h1>
+      <p class="intro-text">
+        Here are my specific favorites and what I plan to do in the future!
+      </p>
+
+      <div class="cards-row">
+        <!-- Anime Favorite -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="font-size: 35px; margin-bottom: 10px;">🍥</div>
+            <h2>Favorite Anime</h2>
+            <p><strong>Naruto</strong> — My absolute favorite anime series of all time.</p>
+          </div>
+        </div>
+
+        <!-- Movie Favorites: Scream with Ghostface Image -->
+        <div class="card">
+          <img src="images/mark-bishop-yIntmwj7ZJM-unsplash.jpg" alt="Ghostface Scream Movies">
+          <h2>Favorite Movies</h2>
+          <p><strong>The Scream Franchise</strong> (Scream 1 through 7) and <strong>Family Plan</strong>.</p>
+        </div>
+
+        <!-- Dream Job -->
+        <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="font-size: 35px; margin-bottom: 10px;">💻</div>
+            <h2>Dream Job</h2>
+            <p><strong>Mathematical Computer Scientist</strong> — My future career goal that I am working toward.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#welcome" class="btn">↑ Back to Welcome</a>
+    </div>
+  </section>
+
+</body>
+</html>
